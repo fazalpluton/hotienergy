@@ -28,7 +28,7 @@ function SideBar()
                 <Link to={"/token-overview"}><img src={Token}/><span>Token Overview</span></Link>
             </li>
             <li>
-                <Link to={"#"}><img src={Payment}/><span>Coming Payments</span></Link>
+                <Link to={"/coming-payments"}><img src={Payment}/><span>Coming Payments</span></Link>
             </li>
             <li>
                 <Link to={"#"}><img src={Stake}/><span>Stake</span></Link>

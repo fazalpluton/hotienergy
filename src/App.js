@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Home from './components/Home';
 import {SideBar,Header} from './components/Index';
-import {BuyHes,TokenOverview} from './screens/Index';
+import {BuyHes,TokenOverview,Payments} from './screens/Index';
 import { useEagerConnect, useInactiveListener } from './hooks/useEagerConnect';
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 
@@ -26,6 +26,7 @@ function App() {
         <Routes>
         <Route path="/" element={<BuyHes/>}  />
         <Route path="/token-overview" element={<TokenOverview/>}  />
+        <Route path="/coming-payments" element={<Payments/>}  />
         </Routes>
       </div>
       </Router>
