@@ -4,7 +4,7 @@ import ArrowWhite from '../assets/images/arrow-white.png'
 import Hest from '../assets/images/hest.png'
 import Usdt from '../assets/images/usdt.png'
 
-function TokenOverview(){
+function Payments(){
     return <>
             <Container fluid>
                 <div className="page-margin-top">
@@ -110,4 +110,4 @@ function TokenOverview(){
             </Container>
     </>
 }
-export default TokenOverview;
+export default Payments;
