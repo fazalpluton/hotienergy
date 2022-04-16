@@ -1,4 +1,6 @@
 import BuyHes from './BuyHes';
 import TokenOverview from './TokenOverview';
 import Payments from './Payments';
-export {BuyHes,TokenOverview,Payments}
+import Stake from './Stake';
+import Calculator from './Calculator';
+export {BuyHes,TokenOverview,Payments,Stake,Calculator}
