@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Home from './components/Home';
 import {SideBar,Header} from './components/Index';
-import {BuyHes,TokenOverview,Payments,Stake,Calculator} from './screens/Index';
+import {BuyHes,TokenOverview,Payments,News,Disclaimer,Partners,Team,Admin,Stake,Calculator} from './screens/Index';
 import { useEagerConnect, useInactiveListener } from './hooks/useEagerConnect';
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 
@@ -29,8 +29,11 @@ function App() {
         <Route path="/coming-payments" element={<Payments/>}  />
         <Route path="/stake" element={<Stake/>}  />
         <Route path="/calculator" element={<Calculator/>}  />
-
-
+        <Route path="/news" element={<News/>}  />
+        <Route path="/disclaimer" element={<Disclaimer/>}  />
+        <Route path="/partners" element={<Partners/>}  />
+        <Route path="/team" element={<Team/>}  />
+        <Route path="/admin" element={<Admin/>}  />
         </Routes>
       </div>
       </Router>
