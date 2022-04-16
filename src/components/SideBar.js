@@ -32,10 +32,10 @@ function SideBar()
                 <Link to={"/coming-payments"}><img src={Payment}/><span>Coming Payments</span></Link>
             </li>
             <li>
-                <Link to={"#"}><img src={Stake}/><span>Stake</span></Link>
+                <Link to={"/stake"}><img src={Stake}/><span>Stake</span></Link>
             </li>
             <li>
-                <Link to={"#"}><img src={Calculator}/><span>Calculator</span></Link>
+                <Link to={"/calculator"}><img src={Calculator}/><span>Calculator</span></Link>
             </li>
             <li>
                 <Link to={"/news"}><img src={News}/><span>News</span></Link>

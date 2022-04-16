@@ -5,6 +5,9 @@
     --black:#000000;
     --white:#fff;
     --light-background:#27ba6730;
+    --gray:#AAAAAA;
+    --light-gray:#E9EBF5;
+    --dark:#2B3438;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -106,9 +109,12 @@ body{
     background: var(--light-background);
     padding: 1rem;
     margin-top: 2rem;
+    border-radius: 10px;
 }
 .trade-section .head{
-    font-size: 16px;
+    font-size: 20px;
+    color: var(--green);
+    font-weight: 400;
 }
 .custom-btn-sm{
     padding: 0.4rem 0.7rem;
@@ -169,7 +175,7 @@ body{
     align-items: center;
 }
 .custom-btn{
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 2rem;
     border:none;
     border-radius:6px;
 }
@@ -178,6 +184,17 @@ body{
     background: var(--light-green);
     color: var(--white);
 }
+
+.small-btn{
+
+background: var(--dark-green);
+color: var(--white);
+padding: 0.5rem 1rem;
+border: none;
+border-radius: 6px;
+
+}
+
 .custom-chart-margin{
     margin-top: 2rem;
 }
@@ -232,6 +249,375 @@ text-transform: uppercase;
 .balance-flex .inner .token-name{
     margin-left: 0.5rem;
 }
+
+/* STACK */
+
+.section-title{
+
+    font-weight:400;
+    font-size: 25px;
+    color: var(--green);
+
+}
+
+.time-refresh{
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+}
+
+.time-refresh p{
+
+    font-size: 8px;
+    color: var(--gray);
+    margin-bottom: 0 !important;
+    margin-right: 10px !important;
+}
+
+.stake-time{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.stake-time span{
+
+    padding:5px 30px;
+
+}
+
+.stake-time span:nth-child(1){
+
+    font-size: 10px;
+
+}
+
+.stake-time span:nth-child(2){
+
+background-color: var(--white);
+border: 1px solid var(--light-green);
+border-radius: 10px;
+
+}
+
+.stake-meta{
+
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.stake-meta .stake-meta-div p{
+
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 10px !important;
+
+}
+
+.stake-meta-div{
+
+    flex-basis: 45%;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.stake-meta-div .head{
+
+background-color: var(--white);
+padding: 25px;
+border-radius: 10px;
+text-align: center;
+}
+
+.stake-green .head{
+
+    background-color: var(--light-green);
+    color: var(--white);
+
+}
+.stake-meta-div span{
+
+    position: absolute;
+    color: var(--light-green);
+    font-size: 12px;
+    font-weight: 500;
+    top: 40px;
+    left: 15px;
+}
+
+
+.input-stake{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-green);
+    padding: 10px ;
+    border-radius: 10px;
+    color: var(--white);
+
+}
+
+.input-stake p{
+
+    margin-bottom: 0 !important;
+
+}
+
+.btn-group{
+
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.btn-group button:first-child{
+
+    margin-right: 15px;
+
+}
+
+.minipool-table p{
+
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 10px !important;
+
+}
+
+
+.stake-table th{
+
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--light-green);
+    line-height: 12px;
+    font-size: 11px;
+    font-weight: 400;
+    vertical-align: middle;
+    border: 1px solid var(--white);
+}
+
+.stake-table td{
+
+    border: 1px solid var(--white);
+    background-color: var(--light-gray);
+    text-align: right;
+
+}
+
+.ellipsis{
+
+    max-width: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.stake-top{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.stake-top>div:nth-child(1){
+
+flex-basis: 50%;
+
+}
+
+.stake-top>div:nth-child(2){
+
+    flex-basis: 48%;
+    
+}
+
+.wallet-blnc{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+
+}
+
+.light-p{
+
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom:0 !important;
+
+}
+
+.light-small-p{
+
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom:0 !important;
+
+}
+
+.hest-to-usd{
+
+    padding: 20px 0;
+
+}
+
+.hest-to-usd span{
+
+    margin-right: 10px;
+    font-size: 18px;
+
+}
+
+.advance-pool{
+
+    position: relative;
+
+}
+
+.advance-pool .light-small-p{
+
+    position: absolute;
+    top: 7px;
+
+}
+
+.active-minipool{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+
+}
+
+.active-minipool li{
+
+    text-align: center;
+
+}
+
+.active-minipool li span{
+
+    font-size: 11px;
+    font-weight: 300;
+    margin-bottom:0 !important;
+
+}
+
+.time-remain-minipool{
+
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+
+.time-remain-minipool .btn-group{
+
+    margin: 0 !important;
+
+}
+
+.border-bg{
+
+    background-color: var(--white);
+    border: 1px solid var(--light-green);
+    border-radius: 10px;
+    padding: 5px 30px;
+    margin-right: 10px;
+
+}
+
+.border-bg sub{
+
+    font-size: 10px;
+
+}
+
+.select-minipool{
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.absolute-p{
+
+    position: absolute;
+    top: -25px;
+    width: 90%;
+    text-align: center;
+
+}
+
+.minipool-form{
+
+    margin-top: 2rem;
+
+}
+
+.minipool-check{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.form-check-label{
+
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 0 !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-check-label span{
+
+    color: var(--light-green);
+    font-weight: 500;
+    font-size: 18px;
+
+
+}
+
+.form-check-basis{
+
+    flex-basis: 70%;
+    display: flex;
+    align-items: center;
+
+}
+
+.form-check-basis span,
+.form-check-basis button{
+
+    flex-basis: 25%;
+    text-align: center;
+}
+
 .payment-flex{
     display: flex;
     justify-content: space-between;
