@@ -13,122 +13,86 @@ function Calculator(){
 
                         <div className="page-margin-top">
                         
-                            <h5 className="section-title">INTRODUCE YOUR DATA</h5>
+                        <h5 className="section-title">INTRODUCE YOUR DATA</h5>
 
-                            <p className="pt-4">%  SHARED EARNINGS</p>
+                        <p className="pt-4">%  SHARED EARNINGS</p>
 
-                            <div className="stake-top">
+                        <div className="calculator">
+
+                            <Form>
+                                <div className="calculator-group">
+                                    <label>Introduce an amount that you consider Hotei’s may deposit</label>
+                                    <div className="calculator-values">
+                                        <input type="number"/>
+                                        <span>USD</span>
+                                    </div>
+                                </div>
+
+                                <div className="calculator-group">
+                                    <label>Your estimated HEST balance</label>
+                                    <div className="calculator-values">
+                                        <input type="number"/>
+                                        <span>HEST</span>
+                                    </div>
+                                </div>
+
+                                <div className="calculator-group">
+                                    <label>HEST approx. value</label>
+                                    <div className="calculator-values">
+                                        <input type="number"/>
+                                        <span>USD / HEST</span>
+                                    </div>
+                                </div>
+                            </Form>
+
+                            <div className="calculator-meta">
+
+                                <div className="calculator-ammount">
+                                <p>Amount shared To support HEST</p>
+                                <div>
+                                    <span></span>
+                                    <span className="position-absolute">USDT</span>
+                                </div>
 
                                 <div>
-                                    <div className="wallet-blnc">
-
-                                        <div className="text-center">
-                                            <p className="light-p">Wallet Balance:</p>
-                                            <div className="hest-to-usd">
-                                                <span>1 HEST</span>
-                                                <span>~</span>
-                                                <span>0.085 USD</span>
-                                            </div>
-
-                                            <button class="custom-btn secondary-btn">Stake</button>
-
-                                        </div>
-
-                                        <div className="text-center">
-                                            <p className="light-p">Wallet Balance:</p>
-                                            <div className="hest-to-usd">
-                                                <span>1 HEST</span>
-                                                <span>~</span>
-                                                <span>0.085 USD</span>
-                                            </div>
-
-                                            <button class="custom-btn secondary-btn">Unstake</button>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div className="wallet-blnc">
-
-                                        <div className="text-center">
-                                            <p className="light-p">Recommended MiniPools:</p>
-                                        
-                                        <div className="advance-pool">
-                                            <p className="light-small-p">Advance 2</p>
-                                            <div className="hest-to-usd">
-                                                <span>2,500 - 5,000</span>
-                                                <button class="small-btn">Join</button>
-                                            </div>
-                                        </div>
-
-                                        <div className="advance-pool">
-                                            <p className="light-small-p">Advance 2</p>
-                                            <div className="hest-to-usd">
-                                                <span>2,500 - 5,000</span>
-                                                <button class="small-btn">Join</button>
-                                            </div>
-                                        </div>
-
-                                        </div>
-
-                                        <div className="text-center">
-                                            <p className="light-p">Total Reward Balance:</p>
-                                            <div className="hest-to-usd py-2">
-                                                <span>300</span>
-                                                <span>USD</span>
-                                            </div>
-
-                                        <div className="d-flex flex-column">
-                                
-                                            <button class="custom-btn secondary-btn mb-3">Compound</button>
-                                            <button class="custom-btn secondary-btn">Redeem</button>
-
-                                        </div>
-
-                                        </div>
-
-                                    </div>
+                                    <span>51%</span>
+                                </div>
                                 </div>
 
-                                <div className="trade-section">
+                                <div className="calculator-ammount">
+                                <p>Amount shared To support HEST</p>
+                                <div>
+                                    <span></span>
+                                    <span className="position-absolute">USDT</span>
+                                </div>
 
-                                    <p class="light-p">MiniPool (s) Active:</p>
-                                    <p class="light-small-p">Advance 2</p>
+                                <div>
+                                    <span>51%</span>
+                                </div>
+                                </div>
 
-                                    <ul className="active-minipool">
-                                        <li>
-                                            <span>STAKE BALANCE (HEST)</span>
-                                            <h3 className="head">150</h3>
-                                        </li>
+                                <div className="calculator-ammount">
+                                <p>Amount shared To support HEST</p>
+                                <div>
+                                    <span></span>
+                                    <span className="position-absolute">USDT</span>
+                                </div>
 
-                                        <li>
-                                            <span>ACTUAL USERS</span>
-                                            <h3 className="head">23</h3>
-                                        </li>
-
-                                        <li>
-                                            <span>MiniPool (USDT)</span>
-                                            <h3 className="head">2950</h3>
-                                        </li>
-
-                                        <li>
-                                            <span>REDEEM YOUR CLAIMABLE BALANCE(USDT)</span>
-                                            <h3 className="head">30</h3>
-                                        </li>
-                                    </ul>
-
-                                    <div className="time-remain-minipool">
-                                        <p class="light-p">Remaining Time to Close</p>
-                                        <h3 className="head">00 : 00 : 00 : 00</h3>
-                                        <div class="btn-group">
-                                            <button class="custom-btn secondary-btn">Unstake</button>
-                                            <button class="custom-btn secondary-btn">Stake</button>
-                                        </div>
-                                    </div>
+                                <div>
+                                    <span>51%</span>
+                                </div>
 
                                 </div>
+
+                              
+                            </div>
 
                             </div>
+
+                        
+
+                       
+
 
                         </div>
 
