@@ -3,12 +3,24 @@ import Arrow from '../assets/images/arrow.png'
 import ArrowWhite from '../assets/images/arrow-white.png'
 import Hest from '../assets/images/hest.png'
 import Usdt from '../assets/images/usdt.png'
+import {InvestmentHistory,PieChartToken} from '../components/Index'
 
 function TokenOverview(){
     return <>
             <Container fluid>
                 <div className="page-margin-top">
-                <Row>
+                <Row className="gy-5">
+                    <Col lg={6}>
+                        <PieChartToken/>
+                    </Col>
+                    <Col lg={6}>
+                        <div className="token-section">
+                        <div className="investment-history mb-3">
+                        <h5>Investment History</h5>
+                        <InvestmentHistory/>
+                        </div>
+                        </div>
+                    </Col>
                     <Col lg={6}>
                        <div className="token-section">
                            <div className="flex">
