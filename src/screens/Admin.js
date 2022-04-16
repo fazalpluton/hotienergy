@@ -1,92 +1,73 @@
 import { Col, Container, Row } from "react-bootstrap";
-import HorizontalLogo from '../assets/images/horizontal-logo.png'
+import Transfer from '../assets/images/transfer.png'
+import BuySell from '../assets/images/buy-sell.png'
+import Wallet from '../assets/images/wallet.png'
+import WalletPartner from '../assets/images/wallet-partner.png'
+import Amount from '../assets/images/amount.png'
+import Dollar from '../assets/images/dollar.png'
+import MakePayment from '../assets/images/make-payment.png'
+import Calender from '../assets/images/calender.png'
+import Pool from '../assets/images/pool.png'
+import News from '../assets/images/new2.png'
+import Info from '../assets/images/info.png'
+
+
 import {HistoricGraph} from '../components/Index';
 
 function Admin(){
     return <>
             <Container fluid>
                 <div className="page-margin-top">
+                <h5 className="section-title">INTRODUCE YOUR DATA</h5>
                 <Row>
                     <Col lg={12}>
-                      
-                     <Row>
-                         <Col lg={5}>
-                         <img src={HorizontalLogo}/>
-                      <p className="mt-1">According our project details, you’re beneficiary of our partner program, here you could find the information about the latest deposits made for your wallet address</p>
-                         </Col>
-                         <Col lg={7}>
-                         <div className="mt-5">
-                      <div className="payment-first-flex">
-                        <div>
-                            <span>DATE OF LAST DEPOSIT:  <span className="green">12/02/2022</span></span>
-                        </div>
-                        <div className="background-green">
-                            .
-                        </div>
-                    </div>
-                    <div className="payment-first-flex">
-                        <div>
-                            <span>TOTAL LAST DEPOSIT <span className="green">(USDT)</span>:</span>
-                        </div>
-                        <div className="background-green">
-                            .
-                        </div>
-                    </div>
-                  
-                    <div className="payment-first-flex">
-                        <div>
-                            <span>DEPOSIT TO PARTNERSHIP <span className="green">(USD)</span>:</span>
-                        </div>
-                        <div className="background-green">
-                            .
-                        </div>
-                    </div>
-                      </div>
-                         </Col>
-                     </Row>
+                      <ul className="admin-ul">
+                          <li>
+                              <img src={Transfer}/>
+                              <span>TRANSFER <br/>OWNERSHIP</span>
+                          </li>
+                          <li>
+                              <img src={BuySell}/>
+                              <span>ADJUST BUY/SELL<br/> COMISSIONS</span>
+                          </li>
+                          <li>
+                              <img src={Wallet}/>
+                              <span>ADD/WITHDRAW<br/> WALLET (TEAM)</span>
+                          </li>
+                          <li>
+                              <img src={WalletPartner}/>
+                              <span>ADD/WITHDRAW <br/> WALLET (PARTNER)</span>
+                          </li>
+                          <li>
+                              <img src={Amount}/>
+                              <span>MODIFY DeFi<br/> AMOUNT</span>
+                          </li>
+                          <li>
+                              <img src={Dollar}/>
+                              <span>MODIFY CeFi<br/> AMOUNT</span>
+                          </li>
+                          <li>
+                              <img src={MakePayment}/>
+                              <span>MAKE <br/> PAYMENT</span>
+                          </li>
+                          <li>
+                              <img src={Calender}/>
+                              <span>SET PAYMENT <br/> DATE</span>
+                          </li>
+                          <li>
+                              <img src={Pool}/>
+                              <span>ADJUST <br/> MINIPOOLS</span>
+                          </li>
+                          <li>
+                              <img src={News}/>
+                              <span>ADD <br/> NEWS</span>
+                          </li>
+                          <li>
+                              <img src={Info}/>
+                              <span>MODIFY <br/> DISCLAIMERS</span>
+                          </li>
+                      </ul>
                     </Col>
-                    <Col lg={12}>
-                       <div className="token-section mt-5">
-                           <div className="historic-flex">
-                           <div>
-                           <h5 className="title-section">Historic Graph</h5>
-                           <span>DEPOSITS</span>
-                           </div>
-                           <div className="filter">
-                               <div className="flex">
-                               <div>
-                                   <input type="checkbox"/>
-                                   <span>Team</span>
-                               </div>
-                               <div>
-                                   <input type="checkbox"/>
-                                   <span>All</span>
-                               </div>
-                               </div>
-                              <div className="flex">
-                              <div >
-                                   <input type="checkbox"/>
-                                   <span>Partners</span>
-                               </div>
-                               <div>
-                                   <input type="checkbox"/>
-                                   <span>Token</span>
-                               </div>
-                              </div>
-                              <div className="flex">
-                               <div>
-                                   <input type="checkbox"/>
-                                   <span>Stake - MiniPools</span>
-                               </div>
-                              </div>
-                           </div>
-                           </div>
-                           <div className="chart-section w-100 mb-3">
-                               <HistoricGraph/>
-                           </div>
-                       </div>
-                    </Col>
-                  
                 </Row>
                 </div>
             </Container>

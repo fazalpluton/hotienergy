@@ -266,7 +266,7 @@ function FinancialChartStockIndexChart() {
                 width="100%"
                 height="500px"
                 isToolbarVisible={true}
-                chartType="Bar"
+                chartType="Candle"
                 chartTitle="HEST / USDT"
                 titleAlignment="Left"
                 titleLeftMargin="25"

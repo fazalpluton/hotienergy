@@ -21,11 +21,11 @@ body{
     overflow: hidden;
 }
 .main-section{
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     overflow: auto;
 }
 .main-body .sidebar{
-    width: 300px;
+    width: 250px;
     background: var(--green);
     height: 100vh;
     position: sticky;
@@ -46,16 +46,26 @@ body{
     overflow: auto;
     height: 100%;
 }
+.main-section::-webkit-scrollbar {
+    width: 5px;
+  }
+  .main-section::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+  }
+  .main-section::-webkit-scrollbar-thumb {
+    background: var(--light-green); 
+    border-radius: 10px;
+  }
 .sidebar-scroll::-webkit-scrollbar {
     width: 5px;
   }
-  
+
   /* Track */
 .sidebar-scroll::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey; 
     border-radius: 10px;
   }
-   
+
   /* Handle */
 .sidebar-scroll::-webkit-scrollbar-thumb {
     background: var(--light-green); 
@@ -74,9 +84,12 @@ body{
     text-decoration: none;
     text-transform:uppercase;
     color: var(--white);
-    font-size: 16px;
+    font-size: 14px;
     padding: 1rem 0;
     padding-left: 2rem;
+}
+.sidebar .sidebar-ul li a img{
+    width: 20px;
 }
 .sidebar .sidebar-ul li a span{
     padding-left: 1rem;
@@ -252,7 +265,7 @@ text-transform: uppercase;
 
 /* STACK */
 
-.section-title{
+.section-title,.title-section{
 
     font-weight:400;
     font-size: 25px;
@@ -709,7 +722,40 @@ justify-content: space-between;
 .news-height{
     min-height: 300px;
 }
+.admin-ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 
+}
+.admin-ul li{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    background: var(--light-background);
+    padding: 2rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+.admin-ul li img{
+    width: 91.06px;
+    height: 85.91px;
+}
+.admin-ul li span{
+    font-size: 15px;
+    color: var(--green);
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+.mint-section{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* CALCULATOR */
 
 .calculator-values{

@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import HorizontalLogo from '../assets/images/horizontal-logo.png'
-import {HistoricGraph} from '../components/Index';
+import {HistoricGraph,Minipooltable} from '../components/Index';
 
 function Team(){
     return <>
@@ -10,11 +10,14 @@ function Team(){
                     <Col lg={12}>
                       
                      <Row>
-                         <Col lg={5}>
+                         <Col lg={4}>
                          <img src={HorizontalLogo}/>
-                      <p className="mt-1">According our project details, you’re beneficiary of our partner program, here you could find the information about the latest deposits made for your wallet address</p>
+                            <p className="mt-1">According our project details, you’re beneficiary of our team program, here you could find the information about the latest deposits made for your wallet address</p>
                          </Col>
-                         <Col lg={7}>
+                         <Col lg={4}>
+                             <Minipooltable/>
+                         </Col>
+                         <Col lg={4}>
                          <div className="mt-5">
                       <div className="payment-first-flex">
                         <div>
