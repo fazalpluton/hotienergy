@@ -616,6 +616,7 @@ justify-content: space-between;
 
     flex-basis: 25%;
     text-align: center;
+}
 
 .payment-flex{
     display: flex;
