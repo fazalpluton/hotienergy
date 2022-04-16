@@ -15,7 +15,7 @@ function BuyHes(){
                         </div>
                     </Col>
                     <Col lg={4}>
-                    <div className="trade-section">
+                    {/* <div className="trade-section">
                         <p className="text-center head">Trade Tokens in an instant</p>
                         <div className="trade-btn-group">
                             <button className="custom-btn-sm btn-secondary-sm">BUY</button>
@@ -50,6 +50,9 @@ function BuyHes(){
                             <button className="custom-btn secondary-btn">Buy</button>
                             </div>
                         </div>
+                    </div> */}
+                    <div className="mint-section">
+                    <button className="custom-btn secondary-btn">Mint</button>
                     </div>
                     </Col>
                 </Row>
